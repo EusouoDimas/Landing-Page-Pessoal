@@ -4,143 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Landing Page</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
- 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
- 
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px;
-    }
- 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
- 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
- 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
- 
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
- 
-    .menu a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
- 
-    .menu-toggle {
-      display: none;
-      cursor: pointer;
-    }
- 
-    .hero {
-      padding: 80px 0;
-      background: #3498db;
-      color: white;
-      text-align: center;
-    }
- 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
- 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
- 
-    .hero button {
-      padding: 12px 24px;
-      background: white;
-      color: #3498db;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-    }
- 
-    section {
-      padding: 60px 0;
-    }
- 
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
- 
-    .grid-item {
-      flex: 1 1 250px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
- 
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
- 
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .menu {
-        display: none;
-        flex-direction: column;
-        background: #2c3e50;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 200px;
-        padding: 10px;
-      }
- 
-      .menu.active {
-        display: flex;
-      }
- 
-      .menu-toggle {
-        display: block;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
       <nav>
-        <div class="logo">MinhaMarca</div>
+        <div class="logo">Gabriel Dimas Alexandre</div>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <div class="menu" id="menu">
           <a href="#sobre">Sobre</a>
-          <a href="#recursos">Recursos</a>
+          <a href="#recursos">Cursos</a>
           <a href="#contato">Contato</a>
         </div>
       </nav>
@@ -149,8 +23,8 @@
  
   <section class="hero">
     <div class="container">
-      <h1>Bem-vindo à nossa página</h1>
-      <p>Apresente aqui o seu produto, serviço ou ideia de forma clara e objetiva.</p>
+      <h1>Bem-vindo ao Meu Portifólio!</h1>
+      <p>Olá Meu nome é Gabriel Dimas Alexandre, aqui irei falar sobre meu conhecimento e me apresentar. </p>
       <button>Saiba Mais</button>
     </div>
   </section>
@@ -167,8 +41,8 @@
       <h2>Recursos</h2>
       <div class="grid">
         <div class="grid-item">
-          <h3>Recurso 1</h3>
-          <p>Descrição breve do recurso.</p>
+          <h3>Inglês Fluente</h3>
+          <p>Frequentei a Escola de Inglês: Rockfeller Language center por anos, tendo 310 horas de curso sendo 2 anos além do preciso para termina-lo, aperfeiçoei meu inglês desde de criança e mantive a prática da conversação e escrita.</p>
         </div>
         <div class="grid-item">
           <h3>Recurso 2</h3>
