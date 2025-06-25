@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header>
@@ -14,7 +15,7 @@
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <div class="menu" id="menu">
           <a href="#sobre">Sobre</a>
-          <a href="#recursos">Cursos</a>
+          <a href="#curso">Cursos</a>
           <a href="#contato">Contato</a>
         </div>
       </nav>
@@ -24,25 +25,28 @@
   <section class="hero">
     <div class="container">
       <h1>Bem-vindo ao Meu Portifólio!</h1>
-      <p>Olá Meu nome é Gabriel Dimas Alexandre, aqui irei falar sobre meu conhecimento e me apresentar. </p>
-      <button>Saiba Mais</button>
+      <p>Olá Meu nome é Gabriel Dimas Alexandre, aqui irei falar sobre meu conhecimento e me apresentar.</p>
+      <div class="buttons">
+        <button id="btnSaibaMais">Saiba Mais</button>
+        <button id="btnGitHub"><i class="fab fa-github"></i> GitHub</button>
+      </div>
     </div>
   </section>
  
   <section id="sobre">
     <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Um breve parágrafo sobre o que a empresa faz, sua missão, visão ou diferencial.</p>
+      <h2>Sobre mim</h2>
+      <p>Não tenho experiência formal de trabalho, mas cresci ajudando meu pai, que é dono de uma microempresa, auxiliando em diversas áreas como almoxarifado, administração e principalmente nas vendas, onde desenvolvi minha oratória e técnicas estratégicas de negociação. Atualmente, curso o segundo ano do Ensino Médio na Escola Heriberto Hülse, no período matutino, e faço também o Curso Técnico em Ciência de Dados. Considero-me uma pessoa que gosta de estar à frente de grupos e que se relaciona bem com as pessoas. Tenho facilidade com linguagens, especialmente na oratória, pois sou fluente em duas línguas. Sou dedicado e só paro quando o trabalho está concluído da melhor maneira possível.</p>
     </div>
   </section>
  
-  <section id="recursos">
+  <section id="curso">
     <div class="container">
-      <h2>Recursos</h2>
+      <h2>Cursos</h2>
       <div class="grid">
         <div class="grid-item">
           <h3>Inglês Fluente</h3>
-          <p>Frequentei a Escola de Inglês: Rockfeller Language center por anos, tendo 310 horas de curso sendo 2 anos além do preciso para termina-lo, aperfeiçoei meu inglês desde de criança e mantive a prática da conversação e escrita.</p>
+          <p>Frequento a Escola de Inglês Rockefeller Language Center há dois anos, com um total de 310 horas de curso, o que supera o tempo necessário para a conclusão do programa. Desde criança, venho aperfeiçoando meu inglês, mantendo a prática constante da conversação e da escrita, o que me proporcionou fluência e confiança para utilizar o idioma em diferentes situações. Além disso, acredito que essa experiência fortalece minha comunicação e abre porta pra orátoria profissional avançada tanto em inglês quanto em português</p>
         </div>
         <div class="grid-item">
           <h3>Recurso 2</h3>
@@ -59,20 +63,35 @@
   <section id="contato">
     <div class="container">
       <h2>Contato</h2>
-      <p>Email: contato@exemplo.com</p>
-      <p>Telefone: (00) 00000-0000</p>
+      <p>Email: Dimasalexandregabriel@gmail.com</p>
+      <p>Telefone: (48) 99840-7244</p>
     </div>
   </section>
  
   <footer>
-    <p>&copy; 2025 MinhaMarca. Todos os direitos reservados.</p>
+    <p>&copy; 2025. Todos os direitos reservados A Gabriel Dimas Alexandre.</p>
   </footer>
  
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("active");
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const btnSaibaMais = document.getElementById('btnSaibaMais');
+      if (btnSaibaMais) {
+        btnSaibaMais.addEventListener('click', () => {
+          document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      const btnGitHub = document.getElementById('btnGitHub');
+      if (btnGitHub) {
+        btnGitHub.addEventListener('click', () => {
+          window.open('https://github.com/eusouodimas', '_blank');
+        });
+      }
+    });
   </script>
 </body>
 </html>
- 

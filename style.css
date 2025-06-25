@@ -1,126 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
- 
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
- 
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px;
-    }
- 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
- 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
- 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
- 
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
- 
-    .menu a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
- 
-    .menu-toggle {
-      display: none;
-      cursor: pointer;
-    }
- 
-    .hero {
-      padding: 80px 0;
-      background: #3498db;
-      color: white;
-      text-align: center;
-    }
- 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
- 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
- 
-    .hero button {
-      padding: 12px 24px;
-      background: white;
-      color: #3498db;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-    }
- 
-    section {
-      padding: 60px 0;
-    }
- 
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
- 
-    .grid-item {
-      flex: 1 1 250px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
- 
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
- 
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .menu {
-        display: none;
-        flex-direction: column;
-        background: #2c3e50;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 200px;
-        padding: 10px;
-      }
- 
-      .menu.active {
-        display: flex;
-      }
- 
-      .menu-toggle {
-        display: block;
-      }
-    }
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background: #f0f4f8;
+  color: #3a4a6d;
+}
+
+header {
+  background: linear-gradient(90deg, #3a4a6d, #6a5d9a);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 3px 8px rgba(58, 74, 109, 0.5);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f28282;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #7db9e8, #6a5d9a);
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 80px rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 14px 34px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: background 0.4s ease, transform 0.2s ease;
+  color: white;
+}
+
+/* Botão Saiba Mais coral com gradiente */
+#btnSaibaMais {
+  background: linear-gradient(90deg, #f28282, #f2b5b5);
+}
+
+#btnSaibaMais:hover {
+  background: linear-gradient(90deg, #f2b5b5, #f28282);
+  transform: translateY(-4px);
+}
+
+/* Botão GitHub azul escuro com gradiente */
+#btnGitHub {
+  background: linear-gradient(90deg, #3a4a6d, #6a5d9a);
+}
+
+#btnGitHub:hover {
+  background: linear-gradient(90deg, #6a5d9a, #3a4a6d);
+  transform: translateY(-4px);
+}
+
+section {
+  padding: 60px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.grid-item {
+  flex: 1 1 250px;
+  background: white;
+  padding: 28px 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(106, 93, 154, 0.1);
+  transition: box-shadow 0.3s ease;
+  color: #3a4a6d;
+}
+
+.grid-item:hover {
+  box-shadow: 0 8px 28px rgba(106, 93, 154, 0.18);
+}
+
+footer {
+  background: linear-gradient(90deg, #3a4a6d, #6a5d9a);
+  color: white;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #6a5d9a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+}
